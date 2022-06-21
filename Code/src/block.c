@@ -296,7 +296,7 @@ void judgeBlock()
             }
         }
       //计数足则整体下移
-      if(count == 8)
+      if(count == MAX_X)
         {
           score = score + 10;
           blockGameStatus = good;

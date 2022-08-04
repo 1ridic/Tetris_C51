@@ -1,10 +1,36 @@
 # 基于 STC89C58 的俄罗斯方块游戏
 
-## 文件夹目录结构
+## 目录结构
 
 ```Bash
-code # 代码文件夹
-Hardware # PCB与原理图设计
+├── Code                # 代码目录
+│   ├── inc             # 头文件目录
+│   │   ├── block.h
+│   │   ├── button.h    # 按键抽象枚举
+│   │   ├── delay.h
+│   │   ├── display.h
+│   │   ├── draw.h
+│   │   ├── eeprom.h
+│   │   ├── img.h       # 屏幕显示资源文件
+│   │   ├── main.h
+│   │   ├── menu.h
+│   │   └── mine.h
+│   ├── src             # 原文件目录
+│   │   ├── block.c     # 俄罗斯方块逻辑实现
+│   │   ├── delay.c     # 延时函数
+│   │   ├── display.c   # 屏幕显示初始化函数
+│   │   ├── draw.c      # 屏幕绘制函数
+│   │   ├── eeprom.c    # EEPROM读写
+│   │   ├── main.c      # 中断函数，初始化与主循环
+│   │   ├── menu.c      # 菜单逻辑实现以及各部分逻辑组合
+│   │   └── mine.c      # 未完善的扫雷逻辑实现
+│   ├── Tetris_C51.uvopt
+│   └── Tetris_C51.uvproj
+├── Hardware            # 硬件部分原理图与PCB
+│   ├── PCB_Tetris_C51.pcbdoc
+│   └── Schematic_Tetris_C51.pdf
+├── LICENSE
+└── README.md
 ```
 
 ## 一些必要说明

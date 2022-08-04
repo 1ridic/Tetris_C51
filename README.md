@@ -6,7 +6,7 @@
 ├── Code                # 代码目录
 │   ├── inc             # 头文件目录
 │   │   ├── block.h
-│   │   ├── button.h    # 按键抽象枚举
+│   │   ├── button.h    # 按键与游戏状态抽象枚举
 │   │   ├── delay.h
 │   │   ├── display.h
 │   │   ├── draw.h
